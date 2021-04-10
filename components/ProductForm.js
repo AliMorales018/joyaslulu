@@ -55,7 +55,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
     <div className="w-full">
       <div className="flex justify-start space-x-2 w-full">
         <div className="flex flex-col items-start space-y-1 flex-grow-0">
-          <label className="text-gray-500 text-base">Qty.</label>
+          <label className="text-gray-500 text-base">Cantgit.</label>
           <input
             type="number"
             inputMode="numeric"
@@ -69,7 +69,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
           />
         </div>
         <div className="flex flex-col items-start space-y-1 flex-grow">
-          <label className="text-gray-500 text-base">Size</label>
+          <label className="text-gray-500 text-base">Tamaño</label>
           <select
             id="size-selector"
             name="size-selector"
@@ -96,7 +96,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
         aria-label="cart-button"
         onClick={handleAddToCart}
       >
-        Add To Cart
+        Añadir al Carrito
         <FontAwesomeIcon icon={faShoppingCart} className="w-5 ml-2" />
       </button>
     </div>

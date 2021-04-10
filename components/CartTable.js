@@ -25,10 +25,10 @@ function CartTable({ cart }) {
       <table className="mx-auto">
         <thead>
           <tr className="uppercase text-xs sm:text-sm text-palette-primary border-b border-palette-light">
-            <th className="font-primary font-normal px-6 py-4">Product</th>
-            <th className="font-primary font-normal px-6 py-4">Quantity</th>
+            <th className="font-primary font-normal px-6 py-4">Producto</th>
+            <th className="font-primary font-normal px-6 py-4">Cantidad</th>
             <th className="font-primary font-normal px-6 py-4 hidden sm:table-cell">Price</th>
-            <th className="font-primary font-normal px-6 py-4">Remove</th>
+            <th className="font-primary font-normal px-6 py-4">Eliminar</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-palette-lighter">

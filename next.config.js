@@ -8,11 +8,11 @@ module.exports = withPWA({
   },
   env: {
     siteTitle: 'Joyas Lulú',
-    siteDescription: 'Get some Doggy Stickers!',
-    siteKeywords: 'dog, stickers, fun',
-    siteUrl: 'https://www.doggystickers.xyz',
+    siteDescription: 'Deslumbra con estas preciosuras!',
+    siteKeywords: 'joyas, regalos, anillo, aretes, cadena, pulsera, collar, oro, plata',
+    siteUrl: 'https://joyaslulu10.vercel.app/',
     siteImagePreviewUrl: '/images/main.jpg',
-    twitterHandle: '@deepwhitman'
+    twitterHandle: '@AliMoralesMo1'
   },
   images: {
     domains: ['cdn.shopify.com'],
