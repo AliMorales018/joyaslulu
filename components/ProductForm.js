@@ -55,7 +55,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
     <div className="w-full">
       <div className="flex justify-start space-x-2 w-full">
         <div className="flex flex-col items-start space-y-1 flex-grow-0">
-          <label className="text-gray-500 text-base">Cantgit.</label>
+          <label className="text-gray-500 text-base">Cant.</label>
           <input
             type="number"
             inputMode="numeric"

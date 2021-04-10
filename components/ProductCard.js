@@ -36,7 +36,7 @@ function ProductCard({ product }) {
             rounded-tl-sm triangle"
           >
             <Price
-              currency="$"
+              currency="S/."
               num={price}
               numSize="text-lg"
             />
