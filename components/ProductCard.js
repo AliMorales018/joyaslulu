@@ -5,18 +5,20 @@ import Price from '@/components/Price'
 function ProductCard({ product }) {
   const handle = product.node.handle
   const title = product.node.title
-  const description = product.node.description
+  const description = product.node.description.substr(0, 80)
+  const description1 = product.node.description.substr(0, 64)
+  const description2 = product.node.description.substr(0, 124)
   const price = product.node.variants.edges[0].node.price
 
   const imageNode = product.node.images.edges[0].node
-
+//grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
   return (
     <Link
       href={`/products/${handle}`}
       passHref
     >
-      <a className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
-        <div className="h-72 border-b-2 border-palette-lighter relative">
+      <a className="h-90 w-30 rounded shadow-sm border border-palette-lighter">
+        <div className="h-40 border-b-2 border-palette-lighter relative">
           <Image
             src={imageNode.originalSrc}
             alt={imageNode.altText}
@@ -24,11 +26,12 @@ function ProductCard({ product }) {
             className="transform duration-500 ease-in-out hover:scale-110"
           />
         </div>
-        <div className="h-48 relative">
-          <div className="font-primary text-palette-primary text-2xl pt-4 px-4 font-semibold">
-            {title}
+        <div className="h-36 relative">
+          <div className="font-primary text-palette-primary text-base pt-2 px-4 font-semibold">
+            {title} 
+            
           </div>
-          <div className="text-lg text-gray-600 p-4 font-primary font-light">
+          <div className="text-xs text-gray-600 p-2 font-primary font-light">
             {description}
           </div>
           <div
@@ -38,7 +41,7 @@ function ProductCard({ product }) {
             <Price
               currency="S/."
               num={price}
-              numSize="text-lg"
+              numSize="text-sm"
             />
           </div>
         </div>
