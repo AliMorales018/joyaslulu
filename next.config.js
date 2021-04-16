@@ -8,7 +8,7 @@ module.exports = withPWA({
   },
   env: {
     siteTitle: 'Joyas Lulú',
-    siteDescription: 'Deslumbra con estas preciosuras!',
+    siteDescription: 'Los pequeños detalles pueden guardar grandes recuerdos!',
     siteKeywords: 'joyas, regalos, anillo, aretes, cadena, pulsera, collar, oro, plata',
     siteUrl: 'https://joyaslulu10.vercel.app/',
     siteImagePreviewUrl: '/images/main.jpg',
