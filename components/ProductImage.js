@@ -13,7 +13,7 @@ function ProductImage({ images }) {
 
   return (
     <div className="w-full md:w-1/2 max-w-md border border-palette-lighter bg-white rounded shadow-lg">
-      <div className="relative h-96">
+      <div className="relative h-40">
         <Image
           src={mainImg.originalSrc}
           alt={mainImg.altText}
@@ -24,7 +24,7 @@ function ProductImage({ images }) {
       <div className="relative flex border-t border-palette-lighter">
         <button
           aria-label="left-scroll"
-          className="h-32 bg-palette-lighter hover:bg-palette-light focus:outline-none absolute left-0 z-10 opacity-75"
+          className="h-12 bg-palette-lighter hover:bg-palette-light focus:outline-none absolute left-0 z-10 opacity-75"
           onClick={() => scroll(-300)}
         >
           <FontAwesomeIcon icon={faArrowLeft} className="w-3 mx-1 text-palette-primary" />
@@ -33,12 +33,14 @@ function ProductImage({ images }) {
           ref={ref}
           style={{ scrollBehavior: "smooth" }}
           className="flex space-x-1 w-full overflow-auto border-t border-palette-lighter"
+          //grande -- h-64
+          //pequeño -- h-32--w-40
         >
           {
             images.map((imgItem, index) => (
               <button
                 key={index}
-                className="relative w-40 h-32 flex-shrink-0 rounded-sm focus:outline-none"
+                className="mx-2 relative w-20 h-12 flex-shrink-0 rounded-sm focus:outline-none"
                 onClick={() => setMainImg(imgItem.node)}
               >
                 <Image
@@ -53,7 +55,7 @@ function ProductImage({ images }) {
         </div>
         <button
           aria-label="right-scroll"
-          className="h-32 bg-palette-lighter hover:bg-palette-light focus:outline-none absolute right-0 z-10 opacity-75"
+          className="h-12 bg-palette-lighter hover:bg-palette-light focus:outline-none absolute right-0 z-10 opacity-75"
           onClick={() => scroll(300)}
         >
           <FontAwesomeIcon icon={faArrowRight} className="w-3 mx-1 text-palette-primary" />

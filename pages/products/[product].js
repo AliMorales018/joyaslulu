@@ -4,12 +4,12 @@ import ProductSection from '@/components/ProductSection'
 function ProductPage({ productData }) {  
 
   return (
-    <div className="min-h-screen py-12 sm:pt-20">
+    <div className="min-h-screen py-1  sm:pt-2">
       <ProductSection productData={productData} />
     </div>
   )
 }
-
+//py-12 sm:pt-20 arriba
 export async function getStaticPaths() {
   const productSlugs = await getProductSlugs()
 
