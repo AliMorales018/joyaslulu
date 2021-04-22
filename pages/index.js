@@ -12,7 +12,7 @@ function IndexPage({ products }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const products = await getAllProductsInCollection()
 
   return {
