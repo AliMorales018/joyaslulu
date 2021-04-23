@@ -11,6 +11,7 @@ function ProductCard({ product }) {
 
   const imageNode = product.node.images.edges[0].node
 //grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+//grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
   return (
     <Link
       href={`/products/${handle}`}
