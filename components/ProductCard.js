@@ -6,7 +6,7 @@ function ProductCard({ product }) {
   const handle = product.node.handle
   const title = product.node.title
   const description = product.node.description.substr(0, 80)
-  const description1 = product.node.description.substr(0, 64)
+  
   const price = product.node.variants.edges[0].node.price
 
   const imageNode = product.node.images.edges[0].node
