@@ -32,7 +32,7 @@ function ProductImage({ images }) {
         <div
           ref={ref}
           style={{ scrollBehavior: "smooth" }}
-          className="ml-5 flex space-x-1 w-full overflow-auto border-t border-palette-lighter"
+          className="ml-5 flex space-x-4 w-full overflow-auto border-t border-palette-lighter"
           //grande -- h-64
           //pequeño -- h-32--w-40
         >
