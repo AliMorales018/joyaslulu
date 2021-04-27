@@ -32,7 +32,7 @@ function ProductImage({ images }) {
         <div
           ref={ref}
           style={{ scrollBehavior: "smooth" }}
-          className="ml-5 flex space-x-4 w-full overflow-auto border-t border-palette-lighter"
+          className="flex space-x-3 w-full overflow-auto border-t border-palette-lighter"
           //grande -- h-64
           //pequeño -- h-32--w-40
         >
@@ -40,7 +40,7 @@ function ProductImage({ images }) {
             images.map((imgItem, index) => (
               <button
                 key={index}
-                className="ml-5 relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none"
+                className="relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none"
                 onClick={() => setMainImg(imgItem.node)}
               >
                 <Image
