@@ -40,7 +40,7 @@ function ProductImage({ images }) {
             images.map((imgItem, index) => (
               <button
                 key={index}
-                className="mx-5 relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none"
+                className="mx-8 relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none"
                 onClick={() => setMainImg(imgItem.node)}
               >
                 <Image
