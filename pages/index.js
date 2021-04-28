@@ -12,13 +12,14 @@ function IndexPage({ products }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {  
   const products = await getAllProductsInCollection()
 
   return {
     props: {
-      products
+      products,
     },
+    revalidate: 1,
   }
 }
 
