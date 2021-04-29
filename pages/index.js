@@ -11,8 +11,9 @@ function IndexPage({ products }) {
     </div>
   )
 }
-
-export async function getStaticProps() {  
+//getStaticProps
+//getServerSideProps
+export async function getServerSideProps() {  
   const products = await getAllProductsInCollection()
 
   return {
