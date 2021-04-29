@@ -10,6 +10,7 @@ function ProductPage({ productData }) {
   )
 }
 //py-12 sm:pt-20 arriba
+/*
 export async function getStaticPaths() {
   const productSlugs = await getProductSlugs()
 
@@ -23,10 +24,10 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: true
   }
 }
-
+*/
 export async function getServerSideProps({ params }) {
   const productData = await getProduct(params.product)  
  
@@ -34,7 +35,7 @@ export async function getServerSideProps({ params }) {
     props: {
       productData,
     },
-    revalidate: 60,
+   revalidate: 60,
   }
 }
 
