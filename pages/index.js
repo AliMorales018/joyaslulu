@@ -19,7 +19,7 @@ export async function getStaticProps() {
     props: {
       products
     },
-    unstable_revalidate: 1,
+    revalidate: 1,
   }
 }
 
