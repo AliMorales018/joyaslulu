@@ -20,7 +20,7 @@ export async function getServerSideProps() {
     props: {
       products
     },
-    revalidate: 60,
+    //revalidate: 60,
   }
 }
 
