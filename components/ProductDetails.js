@@ -6,7 +6,10 @@ import ProductForm from '@/components/ProductForm'
 function ProductDetails({ productData }) {
   const [variantPrice, setVariantPrice] = useState(productData.variants.edges[0].node.price)
   return (
-    <div className="flex flex-col justify-between h-full w-full md:w-1/2 max-w-xs mx-auto space-y-0 min-h-128">
+//grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+//grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+//sm-640px //md-768px //lg-1024px  //xl-1280px //2xl-1536px
+    <div className="flex flex-col justify-between h-full w-full max-w-xs mx-auto space-y-0 min-h-128 md:w-1/2">
       <BackToProductButton />
       <ProductInfo 
         title={productData.title}

@@ -38,5 +38,6 @@ export async function getServerSideProps({ params }) {
   // revalidate: 60,
   }
 }
-
+//getStaticProps
+//getServerSideProps
 export default ProductPage
