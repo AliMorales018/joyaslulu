@@ -13,7 +13,7 @@ function ProductImage({ images }) {
 
   return (
     <div className="w-full md:w-1/2 max-w-md border border-palette-lighter bg-white rounded shadow-lg md:my-4">
-      <div className="relative h-40 md:relative h-64">
+      <div className="relative h-40 md:relative md:h-64">
         <Image
           src={mainImg.originalSrc}
           alt={mainImg.altText}
@@ -40,7 +40,7 @@ function ProductImage({ images }) {
             images.map((imgItem, index) => (
               <button
                 key={index}
-                className="relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none md:relative h-24 md:w-40"
+                className="relative h-12 w-20 flex-shrink-0 rounded-sm focus:outline-none md:relative md:h-24 md:w-40"
                 onClick={() => setMainImg(imgItem.node)}
               >
                 <Image
