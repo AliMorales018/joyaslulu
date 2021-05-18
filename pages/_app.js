@@ -2,7 +2,7 @@ import Layout from '@/components/Layout'
 import SEO from '@/components/SEO'
 import '@/styles/globals.css'
 
-/* function FacebookPixel() {
+function FacebookPixel() {
   React.useEffect(() => {
     import("react-facebook-pixel")
       .then((x) => x.default)
@@ -16,7 +16,7 @@ import '@/styles/globals.css'
       });cla
   });
   return null;
-} */
+}
 
 function MyApp({ Component, pageProps }) {
 
