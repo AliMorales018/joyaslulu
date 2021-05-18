@@ -4,6 +4,23 @@ import { useCartContext } from '@/context/Store'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
+
+function FacebookPixel() {
+  React.useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('4081039101979456');
+        ReactPixel.pageView();
+
+        Router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });cla
+  });
+  return null;
+}
+
 function Nav() {
   const cart = useCartContext()[0]
   const [cartItems, setCartItems] = useState(0)
@@ -50,8 +67,8 @@ function Nav() {
           </Link>
         </div>
       </div>
-    </header >
+    </header >   
   )
 }
-
+<FacebookPixel />
 export default Nav
