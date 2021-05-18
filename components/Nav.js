@@ -4,9 +4,6 @@ import { useCartContext } from '@/context/Store'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
 function Nav() {
   const cart = useCartContext()[0]
   const [cartItems, setCartItems] = useState(0)

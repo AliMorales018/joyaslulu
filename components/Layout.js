@@ -3,8 +3,6 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Wa from '@/components/Wa.js'
 
-
-
 function Layout({ children }) {
   
   return (
