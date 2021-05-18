@@ -7,7 +7,7 @@ function FacebookPixel() {
     import("react-facebook-pixel")
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init('785931672069383');
+        ReactPixel.init('4081039101979456');
         ReactPixel.pageView();
 
         Router.events.on("routeChangeComplete", () => {
