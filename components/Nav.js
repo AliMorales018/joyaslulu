@@ -18,6 +18,24 @@ function Nav() {
 
   return (
     <header className="border-b border-palette-lighter sticky top-0 z-20 bg-white">
+
+     {/* Facebook Pixel Code */}
+     <script
+            dangerouslySetInnerHTML={{
+              __html: `!function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '929750604483619');
+                fbq('track', 'PageView');`,
+            }}
+          />
+          {/* End Facebook Pixel Code */}
+
       <div className="flex items-center justify-between mx-auto max-w-6xl px-6 pb-2 pt-4 md:pt-6">
         <Link href="/" passHref>
           <a className="focus:outline-none cursor-pointer">
