@@ -2,27 +2,13 @@ import Layout from '@/components/Layout'
 import SEO from '@/components/SEO'
 import '@/styles/globals.css'
 
-function FacebookPixel() {
-  React.useEffect(() => {
-    import("react-facebook-pixel")
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init('929750604483619');
-        ReactPixel.pageView();
 
-        Router.events.on("routeChangeComplete", () => {
-          ReactPixel.pageView();
-        });
-      });cla
-  });
-  return null;
-}
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <FacebookPixel />
+      
       <SEO 
         title={process.env.siteTitle}
       />
