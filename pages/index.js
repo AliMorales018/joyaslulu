@@ -1,6 +1,6 @@
 import StoreHeading from '@/components/StoreHeading'
 import ProductListings from '@/components/ProductListings'
-import { getAllProductsInCollection } from '@/lib/shopify'
+import { getAllProducts} from '@/lib/shopify'
 
 function IndexPage({ products }) {
 
@@ -11,10 +11,11 @@ function IndexPage({ products }) {
     </div>
   )
 }
-//getStaticProps
-//getServerSideProps
+//Se reemplaza getStaticProps por getServerSideProps 
+//Original con getAllProductsInCollection() se reemplazó por getAllProducts()
+
 export async function getServerSideProps() {  
-  const products = await getAllProductsInCollection()
+  const products = await getAllProducts()
 
   return {
     props: {

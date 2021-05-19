@@ -35,9 +35,9 @@ export async function getServerSideProps({ params }) {
     props: {
       productData,
     },
-  // revalidate: 60,
+  // revalidate: 60, Si es getStaticProps, tambien iría getStaticPaths
   }
 }
-//getStaticProps
+//getStaticProps remplaza a la funcion de abajo
 //getServerSideProps
 export default ProductPage
